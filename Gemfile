@@ -4,6 +4,7 @@ gem 'slack-ruby-bot', '~> 0.2.0'
 gem 'puma'
 gem 'sinatra'
 gem 'dentaku'
+gem 'aws-sdk', '~> 2'
 
 group :development, :test do
   gem 'rake', '~> 10.4'

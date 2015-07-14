@@ -13,19 +13,29 @@ See [DEPLOYMENT](DEPLOYMENT.md).
 
 TODO
 
-### Commands
+## Commands
 
-#### aws
+### aws
 
 Shows bot version and links.
 
-#### aws hi
+### aws hi
 
 Politely says 'hi' back.
 
-#### aws help
+### aws help
 
 Get help.
+
+### aws s3
+
+#### aws s3 list buckets
+
+Lists S3 buckets.
+
+#### aws s3 ls [bucket name]
+
+Displays the first 5 objects in an S3 bucket.
 
 ## Contributing
 

@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bucket1.s3.amazonaws.com/?encoding-type=url&max-keys=5
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.1.4 ruby/2.0.0 x86_64-darwin14.0.0
+      Date:
+      - Tue, 14 Jul 2015 18:02:03 GMT
+      Content-Length:
+      - '0'
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - OyqL3Trt59zQJrVAt17IGKrNsY1mCjow9GbCYdwowVBtRO0I+S12h7OAV/jTDkjmNLgdsDaMylU=
+      X-Amz-Request-Id:
+      - BACA496F173B13ED
+      Date:
+      - Tue, 14 Jul 2015 18:02:05 GMT
+      X-Amz-Bucket-Region:
+      - us-east-1
+      Content-Type:
+      - application/xml
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+          <Name>gravityow-assets</Name>
+          <Prefix></Prefix>
+          <Marker></Marker>
+          <MaxKeys>5</MaxKeys>
+          <EncodingType>url</EncodingType>
+          <IsTruncated>true</IsTruncated>
+          <Contents>
+            <Key>1.zip</Key>
+            <LastModified>2013-10-17T21:30:13.000Z</LastModified>
+            <ETag>&quot;f30cfb232874afdf195f3f734e9600a2&quot;</ETag>
+            <Size>21991757</Size>
+            <Owner>
+              <ID>0e8b0fe19497f9f369651412f2300862af13c75e04427f61b8221c17c2f55dd0</ID>
+              <DisplayName>joey</DisplayName>
+            </Owner>
+            <StorageClass>STANDARD</StorageClass>
+          </Contents>
+          <Contents>
+            <Key>Cheffile.lock</Key>
+            <LastModified>2013-10-17T22:51:11.000Z</LastModified>
+            <ETag>&quot;60a7ca1f227c4d72404bbb6b6360dcb7&quot;</ETag>
+            <Size>1157</Size>
+            <Owner>
+              <ID>0e8b0fe19497f9f369651412f2300862af13c75e04427f61b8221c17c2f55dd0</ID>
+              <DisplayName>joey</DisplayName>
+            </Owner>
+            <StorageClass>STANDARD</StorageClass>
+          </Contents>
+        </ListBucketResult>
+    http_version:
+  recorded_at: Tue, 14 Jul 2015 18:02:04 GMT

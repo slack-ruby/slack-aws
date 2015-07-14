@@ -26,7 +26,7 @@ AWS key and secret.
 
 #### AWS_REGION
 
-Optional AWS region to connect to.
+AWS region to connect to, eg. `us-east-1`.
 
 #### GIPHY_API_KEY
 
