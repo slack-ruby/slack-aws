@@ -1,0 +1,6 @@
+{
+	"name": "AWS bot for Slack",
+	"description": "Slack integration with AWS.",
+	"respository": "https://github.com/dblock/slack-aws",
+	"keywords": ["slack", "integration", "aws", "amazon web services"],
+}
