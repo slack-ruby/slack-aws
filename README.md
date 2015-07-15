@@ -9,10 +9,6 @@ Slack bot for AWS.
 
 See [DEPLOYMENT](DEPLOYMENT.md).
 
-## Usage
-
-TODO
-
 ## Commands
 
 ### aws
@@ -29,13 +25,27 @@ Get help.
 
 ### aws s3
 
-#### aws s3 list buckets
+#### aws s3 buckets
 
 Lists S3 buckets.
 
-#### aws s3 ls [bucket name]
+#### aws s3 ls [bucket] [N]
 
-Displays the first 5 objects in an S3 bucket.
+Displays max N objects in an S3 bucket.
+
+### aws opsworks
+
+#### aws opsworks stacks
+
+Lists OpsWorks stacks.
+
+#### aws opsworks apps [stack]
+
+Lists apps for a given stack.
+
+#### aws opsworks instances [stack]
+
+Lists instances for a given stack.
 
 ## Contributing
 

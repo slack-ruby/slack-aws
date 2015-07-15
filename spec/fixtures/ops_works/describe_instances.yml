@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://opsworks.us-east-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.1.4 ruby/2.1.2 x86_64-darwin13.0
+      Host:
+      - opsworks.us-east-1.amazonaws.com
+      Content-Length:
+      - '2'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Thu, 16 Jul 2015 00:33:48 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Stacks":[
+        {
+          "AgentVersion":"LATEST",
+          "Arn":"arn:aws:opsworks:us-east-1:585031190124:stack/deadbeef-99d2-4235-bd1f-46e7e6fa4e94/",
+          "Attributes" : { "Color":"rgb(57, 131, 94)"},
+          "ChefConfiguration" : {},
+          "ConfigurationManager" : {
+              "Name":"Chef",
+              "Version":"11.4"
+          },
+          "CreatedAt":"2013-05-17T15:13:10+00:00",
+          "CustomCookbooksSource" : {
+            "Password":"password",
+            "Type":"s3",
+            "Url":"https://s3.amazonaws.com/example-cookbooks/example-production.zip",
+            "Username":"username"
+          },
+          "CustomJson":"",
+          "DefaultAvailabilityZone":"us-east-1b",
+          "DefaultInstanceProfileArn":"arn:aws:iam::585031190124:instance-profile/aws-opsworks-ec2-role",
+          "DefaultOs":"Amazon Linux",
+          "DefaultRootDeviceType":"instance-store",
+          "DefaultSshKeyName":"exampleow",
+          "HostnameTheme":"Layer_Dependent",
+          "Name":"example-production",
+          "Region":"us-east-1",
+          "ServiceRoleArn":"arn:aws:iam::585031190124:role/aws-opsworks-service-role",
+          "StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94",
+          "UseCustomCookbooks":true,
+          "UseOpsworksSecurityGroups":true
+        }
+      ]}'
+    http_version:
+  recorded_at: Thu, 16 Jul 2015 00:33:52 GMT
+- request:
+    method: post
+    uri: https://opsworks.us-east-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: '{"StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94"}'
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.1.4 ruby/2.1.2 x86_64-darwin13.0
+      Host:
+      - opsworks.us-east-1.amazonaws.com
+      Content-Length:
+      - '50'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Thu, 16 Jul 2015 00:38:38 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Instances":[
+        {
+          "AgentVersion":"INHERIT",
+          "AmiId":"ami-d2817cba",
+          "Architecture":"x86_64",
+          "AvailabilityZone":"us-east-1b",
+          "BlockDeviceMappings":[],
+          "CreatedAt":"2013-05-17T15:37:25+00:00",
+          "EbsOptimized":false,
+          "Ec2InstanceId":"i-e664e331",
+          "Hostname":"rails-app1",
+          "InfrastructureClass":"ec2",
+          "InstallUpdatesOnBoot":true,
+          "InstanceId":"28dd3059-b805-4a1a-90dc-e20fd78c28a3",
+          "InstanceProfileArn":"arn:aws:iam::585031190124:instance-profile/aws-opsworks-ec2-role",
+          "InstanceType":"m3.large",
+          "LayerIds":["3429ab9c-23c5-4d8e-9ab9-0774d2d4bedb"],
+          "Os":"Amazon Linux",
+          "Platform":"linux",
+          "PrivateDns":"ip-10-113-191-136.ec2.internal",
+          "PrivateIp":"10.113.191.136",
+          "PublicDns":"ec2-32-161-139-31.compute-1.amazonaws.com",
+          "PublicIp":"54.161.139.31",
+          "ReportedAgentVersion":"241",
+          "ReportedOs":{
+            "Family":"rhel",
+            "Name":"amazon",
+            "Version":"2014.03"
+          },
+          "RootDeviceType":"instance-store",
+          "SecurityGroupIds":["sg-baadfood", "sg-deadbeef"],
+          "SshHostDsaKeyFingerprint":"DE:AD:BE:EF:31:89:38:9d:54:01",
+          "SshHostRsaKeyFingerprint":"DE:AD:BE:EEF:e2:da:08:70:51:29:67:8f:52:d9",
+          "SshKeyName":"exampleow",
+          "StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94",
+          "Status":"online",
+          "VirtualizationType":"paravirtual"
+        },
+        {
+          "AgentVersion":"INHERIT",
+          "AmiId":"ami-d2817cba",
+          "Architecture":"x86_64",
+          "AvailabilityZone":"us-east-1b",
+          "BlockDeviceMappings":[],
+          "CreatedAt":"2013-05-17T15:37:56+00:00",
+          "EbsOptimized":false,
+          "Ec2InstanceId":"i-d0b93e07",
+          "Hostname":"rails-app2",
+          "InfrastructureClass":"ec2",
+          "InstallUpdatesOnBoot":true,
+          "InstanceId":"38a87b5d-f220-42af-8602-cc61997604c0",
+          "InstanceProfileArn":"arn:aws:iam::585031190124:instance-profile/aws-opsworks-ec2-role",
+          "InstanceType":"m3.large",
+          "LayerIds":["3429ab9c-23c5-4d8e-9ab9-0774d2d4bedb"],
+          "Os":"Amazon Linux",
+          "Platform":"linux",
+          "PrivateDns":"ip-10-146-232-107.ec2.internal",
+          "PrivateIp":"10.146.254.107",
+          "PublicDns":"ec2-32-145-242-22.compute-1.amazonaws.com",
+          "PublicIp":"54.145.242.22",
+          "ReportedAgentVersion":"241",
+          "ReportedOs":{
+            "Family":"rhel",
+            "Name":"amazon",
+            "Version":"2014.03"
+          },
+          "RootDeviceType":"instance-store",
+          "SecurityGroupIds":["sg-baadfood", "sg-deadbeef"],
+          "SshHostDsaKeyFingerprint":"DE:AD:BE:EF:02:e8:04:89:de:62",
+          "SshHostRsaKeyFingerprint":"DE:AD:BE:EEF:d3:b9:d6:26:63:73:8f:3a:28:e6",
+          "SshKeyName":"exampleow",
+          "StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94",
+          "Status":"online",
+          "VirtualizationType":"paravirtual"}
+        ]
+      }'
+    http_version:
+  recorded_at: Thu, 16 Jul 2015 00:38:42 GMT
+recorded_with: VCR 2.9.3

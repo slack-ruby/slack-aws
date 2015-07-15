@@ -24,14 +24,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Amz-Id-2:
-      - OyqL3Trt59zQJrVAt17IGKrNsY1mCjow9GbCYdwowVBtRO0I+S12h7OAV/jTDkjmNLgdsDaMylU=
-      X-Amz-Request-Id:
-      - BACA496F173B13ED
       Date:
       - Tue, 14 Jul 2015 18:02:05 GMT
-      X-Amz-Bucket-Region:
-      - us-east-1
       Content-Type:
       - application/xml
       Transfer-Encoding:
@@ -55,8 +49,8 @@ http_interactions:
             <ETag>&quot;f30cfb232874afdf195f3f734e9600a2&quot;</ETag>
             <Size>21991757</Size>
             <Owner>
-              <ID>0e8b0fe19497f9f369651412f2300862af13c75e04427f61b8221c17c2f55dd0</ID>
-              <DisplayName>joey</DisplayName>
+              <ID>baadfood</ID>
+              <DisplayName>joe</DisplayName>
             </Owner>
             <StorageClass>STANDARD</StorageClass>
           </Contents>
@@ -66,8 +60,8 @@ http_interactions:
             <ETag>&quot;60a7ca1f227c4d72404bbb6b6360dcb7&quot;</ETag>
             <Size>1157</Size>
             <Owner>
-              <ID>0e8b0fe19497f9f369651412f2300862af13c75e04427f61b8221c17c2f55dd0</ID>
-              <DisplayName>joey</DisplayName>
+              <ID>baadfood</ID>
+              <DisplayName>joe</DisplayName>
             </Owner>
             <StorageClass>STANDARD</StorageClass>
           </Contents>

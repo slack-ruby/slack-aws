@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://opsworks.us-east-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.1.4 ruby/2.1.2 x86_64-darwin13.0
+      Host:
+      - opsworks.us-east-1.amazonaws.com
+      Content-Length:
+      - '2'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Thu, 16 Jul 2015 00:33:48 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Stacks":[
+        {
+          "AgentVersion":"LATEST",
+          "Arn":"arn:aws:opsworks:us-east-1:585031190124:stack/deadbeef-99d2-4235-bd1f-46e7e6fa4e94/",
+          "Attributes" : { "Color":"rgb(57, 131, 94)"},
+          "ChefConfiguration" : {},
+          "ConfigurationManager" : {
+              "Name":"Chef",
+              "Version":"11.4"
+          },
+          "CreatedAt":"2013-05-17T15:13:10+00:00",
+          "CustomCookbooksSource" : {
+            "Password":"password",
+            "Type":"s3",
+            "Url":"https://s3.amazonaws.com/example-cookbooks/example-production.zip",
+            "Username":"username"
+          },
+          "CustomJson":"",
+          "DefaultAvailabilityZone":"us-east-1b",
+          "DefaultInstanceProfileArn":"arn:aws:iam::585031190124:instance-profile/aws-opsworks-ec2-role",
+          "DefaultOs":"Amazon Linux",
+          "DefaultRootDeviceType":"instance-store",
+          "DefaultSshKeyName":"exampleow",
+          "HostnameTheme":"Layer_Dependent",
+          "Name":"example-production",
+          "Region":"us-east-1",
+          "ServiceRoleArn":"arn:aws:iam::585031190124:role/aws-opsworks-service-role",
+          "StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94",
+          "UseCustomCookbooks":true,
+          "UseOpsworksSecurityGroups":true
+        }
+      ]}'
+    http_version:
+  recorded_at: Thu, 16 Jul 2015 00:33:52 GMT
+- request:
+    method: post
+    uri: https://opsworks.us-east-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: '{"StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94"}'
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.1.4 ruby/2.1.2 x86_64-darwin13.0
+      Host:
+      - opsworks.us-east-1.amazonaws.com
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Thu, 16 Jul 2015 00:38:37 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Apps":[
+        {
+          "AppId":"05e1dabf-3d8e-43fe-a4bc-041f5254c86e",
+          "AppSource":{
+            "Revision":"production",
+            "SshKey":"sshkey",
+            "Type":"git",
+            "Url":"git@github.com:example/example.git"
+          },
+          "Attributes":{
+            "AutoBundleOnDeploy":"true",
+            "AwsFlowRubySettings":null,
+            "DocumentRoot":"public",
+            "RailsEnv":"production"
+          },
+          "CreatedAt":"2013-05-17T15:13:10+00:00",
+          "DataSources":[{
+            "DatabaseName":"example",
+            "Type":"AutoSelectOpsworksMysqlInstance"}
+          ],
+          "Domains":[
+            "example.net",
+            "api.example.net"
+          ],
+          "EnableSsl":true,
+          "Name":"example",
+          "Shortname":"example",
+          "SslConfiguration":{
+            "Certificate":"-----BEGIN CERTIFICATE-----\ndata\n-----END CERTIFICATE-----",
+            "PrivateKey":"-----BEGINRSA PRIVATE KEY-----\ndata\n-----END RSA PRIVATE KEY-----"
+          },
+          "StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94",
+          "Type":"rails"
+        }
+      ]}'
+    http_version:
+  recorded_at: Thu, 16 Jul 2015 00:38:41 GMT
+

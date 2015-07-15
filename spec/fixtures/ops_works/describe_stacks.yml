@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://opsworks.us-east-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.1.4 ruby/2.1.2 x86_64-darwin13.0
+      Host:
+      - opsworks.us-east-1.amazonaws.com
+      Content-Length:
+      - '2'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Thu, 16 Jul 2015 00:33:48 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Stacks":[
+        {
+          "AgentVersion":"LATEST",
+          "Arn":"arn:aws:opsworks:us-east-1:585031190124:stack/3c65972b-ed3c-48ca-b083-7a7642e4d3b2/",
+          "Attributes" : { "Color":"rgb(45, 114, 184)" },
+          "ChefConfiguration" : {},
+          "ConfigurationManager" : {
+            "Name":"Chef",
+            "Version":"11.4"
+          },
+          "CreatedAt":"2013-02-25T18:00:58+00:00",
+          "CustomCookbooksSource" : {
+            "Password":"password",
+            "Type":"s3",
+            "Url":"https://s3.amazonaws.com/example-cookbooks/example-staging.zip",
+            "Username":"username"
+          },
+          "CustomJson":"",
+          "DefaultAvailabilityZone":"us-east-1b",
+          "DefaultInstanceProfileArn":"arn:aws:iam::585031190124:instance-profile/aws-opsworks-ec2-role",
+          "DefaultOs":"Amazon Linux",
+          "DefaultRootDeviceType":"instance-store",
+          "DefaultSshKeyName":"exampleow",
+          "HostnameTheme":"Layer_Dependent",
+          "Name":"example-staging",
+          "Region":"us-east-1",
+          "ServiceRoleArn":"arn:aws:iam::585031190124:role/aws-opsworks-service-role",
+          "StackId":"3c65972b-ed3c-48ca-b083-7a7642e4d3b2",
+          "UseCustomCookbooks":true,
+          "UseOpsworksSecurityGroups":true
+        },
+        {
+          "AgentVersion":"LATEST",
+          "Arn":"arn:aws:opsworks:us-east-1:585031190124:stack/deadbeef-99d2-4235-bd1f-46e7e6fa4e94/",
+          "Attributes" : { "Color":"rgb(57, 131, 94)"},
+          "ChefConfiguration" : {},
+          "ConfigurationManager" : {
+              "Name":"Chef",
+              "Version":"11.4"
+          },
+          "CreatedAt":"2013-05-17T15:13:10+00:00",
+          "CustomCookbooksSource" : {
+            "Password":"password",
+            "Type":"s3",
+            "Url":"https://s3.amazonaws.com/example-cookbooks/example-production.zip",
+            "Username":"username"
+          },
+          "CustomJson":"",
+          "DefaultAvailabilityZone":"us-east-1b",
+          "DefaultInstanceProfileArn":"arn:aws:iam::585031190124:instance-profile/aws-opsworks-ec2-role",
+          "DefaultOs":"Amazon Linux",
+          "DefaultRootDeviceType":"instance-store",
+          "DefaultSshKeyName":"exampleow",
+          "HostnameTheme":"Layer_Dependent",
+          "Name":"example-production",
+          "Region":"us-east-1",
+          "ServiceRoleArn":"arn:aws:iam::585031190124:role/aws-opsworks-service-role",
+          "StackId":"deadbeef-99d2-4235-bd1f-46e7e6fa4e94",
+          "UseCustomCookbooks":true,
+          "UseOpsworksSecurityGroups":true
+        }
+      ]}'
+    http_version:
+  recorded_at: Thu, 16 Jul 2015 00:33:52 GMT
+recorded_with: VCR 2.9.3

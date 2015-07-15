@@ -24,10 +24,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Amz-Id-2:
-      - ZHi6YOHvn4sN1byfVVMuPJ5FbynbAM6qK80R0P0A3/eufeGsKwvVTXukXqC+Ij1l
-      X-Amz-Request-Id:
-      - 0673E7CC258688E1
       Date:
       - Tue, 14 Jul 2015 17:35:35 GMT
       Content-Type:
@@ -42,12 +38,12 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
           <Owner>
-            <ID>0e8b0fe19497f9f369651412f2300862af13c75e04427f61b8221c17c2f55dd0</ID>
-            <DisplayName>joey</DisplayName>
+            <ID>baadfood</ID>
+            <DisplayName>joe</DisplayName>
           </Owner>
           <Buckets>
             <Bucket>
-              <Name>bucket1.artsy.net</Name>
+              <Name>bucket1.example.net</Name>
               <CreationDate>2015-01-07T22:37:45.000Z</CreationDate>
             </Bucket>
             <Bucket>
