@@ -3,8 +3,9 @@ module SlackAws
     class S3 < SlackRubyBot::Commands::Base
       extend SlackAws::Util::AwsClientResponse
 
-      def self.call(data, _command, arguments)
-        case arguments.shift
+      command 's3' do |data, match|
+        arguments = match['expression'].split.reject(&:blank?) if match.names.include?('expression')
+        case arguments && arguments.shift
         when 'buckets' then
           send_fields data.channel, Aws::S3::Client.new.list_buckets.buckets, *[:name, :creation_date].concat(arguments)
         when 'ls' then

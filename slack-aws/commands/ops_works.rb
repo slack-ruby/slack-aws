@@ -3,8 +3,9 @@ module SlackAws
     class OpsWorks < SlackRubyBot::Commands::Base
       extend SlackAws::Util::AwsClientResponse
 
-      def self.call(data, _command, arguments)
-        case arguments.shift
+      command 'opsworks' do |data, match|
+        arguments = match['expression'].split.reject(&:blank?) if match.names.include?('expression')
+        case arguments && arguments.shift
         when 'stacks' then
           send_fields data.channel, Aws::OpsWorks::Client.new.describe_stacks.stacks, *[:name, :created_at].concat(arguments)
         when 'apps' then
