@@ -8,7 +8,7 @@ module SlackAws
             "#{field}=*#{value}*" if value
           end.compact.join(', ')
         end.join("\n")
-        send_message client, channel, message
+        client.say(text: message, channel: channel)
       end
     end
   end

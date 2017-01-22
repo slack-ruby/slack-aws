@@ -1,7 +1,7 @@
 SlackAws
 ========
 
-[![Build Status](https://travis-ci.org/dblock/slack-aws.png)](https://travis-ci.org/dblock/slack-aws)
+[![Build Status](https://api.travis-ci.org/slack-ruby/slack-aws.png)](https://travis-ci.org/slack-ruby/slack-aws)
 
 Slack bot for AWS.
 

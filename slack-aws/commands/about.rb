@@ -4,7 +4,7 @@ module SlackAws
       match(/^(?<bot>\w*)$/)
 
       def self.call(client, data, _match)
-        send_message_with_gif client, data.channel, SlackAws::ABOUT, 'cloud'
+        client.say(text: SlackAws::ABOUT, channel: data.channel)
       end
     end
   end

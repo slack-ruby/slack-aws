@@ -25,7 +25,7 @@ module SlackAws
           fail "Invalid stack: #{stack_name}" unless stack_id
           send_fields client, data.channel, opsworks_client.describe_instances(stack_id: stack_id).instances, *[:hostname, :instance_type, :status, :public_dns, :created_at].concat(arguments)
         else
-          send_message_with_gif client, data.channel, 'Syntax: aws opsworks [command], need `aws help`?', 'idiot'
+          client.say(text: 'Syntax: aws opsworks [command], need `aws help`?', channel: data.channel)
         end
       end
     end
